@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Netflix dark background */
+    color: #ffffff; /* White text for contrast */
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c; /* Slightly lighter dark tone for header */
+    padding: 10px 20px;
+    border-bottom: 2px solid #e50914; /* Netflix red accent */
+  }
+  
+  header .logo {
+    width: 120px;
+    height: 50px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+  header .sign {
+    color: #e50914; /* Netflix red */
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  #photo {
+    width: 100%;
+    height: 200px;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vl/63d99b52-5406-4b25-8e26-3d2b7a7b34e2/228703d4-a7da-4e70-b8d3-26d92994cfed/IN-en-20230717-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  
+  .head h1 {
+    font-size: 2rem;
+    color: #e50914; /* Netflix red */
+    margin: 20px 0;
+  }
+  
+  #jk {
+    list-style-type: none;
+    text-align: left;
+    margin: 20px 0;
+  }
+  
+  #jk li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  #jk li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #e50914; /* Netflix red */
+  }
+  
+  button {
+    background-color: #e50914;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #b20710; /* Slightly darker red for hover effect */
+  }
+  
+  hr {
+    border: none;
+    border-top: 2px solid #e50914;
+    margin: 20px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    .container {
+      padding: 15px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
